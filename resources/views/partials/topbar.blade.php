@@ -8,7 +8,7 @@
         </div>
 
         <div class="navarea__actions">
-            <a href="#" class="nav_action">Notifications</a>
+            <notification-menu :notifications="[]"  ></notification-menu>
             <user-menu>
                 <a href="#">Settings</a>
                 <a href="#">Logout</a>

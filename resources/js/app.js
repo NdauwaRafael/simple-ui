@@ -20,6 +20,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('user-menu', require('./components/layout/topbar/user').default);
+Vue.component('notification-menu', require('./components/layout/topbar/notifications').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

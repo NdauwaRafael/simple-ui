@@ -117,8 +117,8 @@
                     min-width: 300px;
                     position: absolute;
                     z-index: 650;
-                    top: 55px;
-                    right: 0;
+                    top: 40px;
+                    right: -10px;
                     display: flex;
                     //flex-direction: column;
                     background: #fff;
@@ -234,6 +234,154 @@
                 }
             }
 
+            .nav_notifications {
+                display: flex;
+                align-items: center;
+                //flex: 1;
+                width: 50px;
+                position: relative;
+                a {
+                    position: relative;
+                    i {
+                        color: #fff;
+                        font-size: 28px;
+                        font-weight: 400;
+                    }
+
+                    .notify_bubble {
+                        border-radius: 20px;
+                        border: 1px solid #FFF;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #de0e0e;
+                        position: absolute;
+                        top: -10px;
+                        right: -10px;
+                        font-size: 10px;
+                        line-height: 18px;
+                        font-family: 'Roboto', sans-serif;
+                        color: #fff;
+                        font-weight: 700;
+                        text-align: center;
+
+                    }
+                }
+
+                &__content {
+                    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.2);
+                    background-color: #ffffff;
+                    min-width: 300px;
+                    position: absolute;
+                    top: 40px;
+                    right: -20px;
+                    width: 420px;
+                    border-radius: 4px;
+                    color: rgba(27, 29, 48, 0.5);
+                    font-size: 12px;
+                    animation: fadeIn .4s forwards;
+                    z-index: 250;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: -6px;
+                        right: 40px;
+                        width: 0;
+                        height: 0;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid #FFF;
+                    }
+
+                    .notify_title {
+                        border-bottom: 1px solid #EEEEEE;
+                        height: 40px;
+                        padding: 15px;
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        color: #4d4f5c;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 12px;
+                    }
+
+                    .notify_messages {
+                        min-height: 240px;
+                        max-height: 340px;
+                        overflow: auto;
+                        border-radius: 0 0 4px 4px;
+
+                        ul {
+                            margin: 0;
+
+                            .notify_message {
+                                list-style: none;
+                                background-color: #fafafa;
+                                padding: 15px 30px;
+                                border-bottom: 1px solid #f1f1f3;
+                                cursor: pointer;
+
+
+                                &__title {
+                                    &.unread {
+                                        color: #4d4f5c;
+                                        font-weight: 700;
+                                    }
+                                    font-weight: 400;
+                                    margin-bottom: 10px;
+                                }
+
+                                &__body {
+                                    &.unread {
+                                        color: #707070;
+                                        font-weight: 700;
+                                        line-height: 13px;
+                                    }
+                                    color: #707070;
+                                    font-size: 12px;
+                                    line-height: 13px;
+                                    margin-bottom: 10px;
+                                }
+
+                                &:hover {
+                                    opacity: .8;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &__overlay {
+                    position: absolute;
+                    height: 100vh;
+                    width: 100vw;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.03);
+                    z-index: 200;
+
+                }
+            }
+
+            @at-root {
+                @media screen and (max-width: 500px) {
+                    .crims_notifications {
+                        &__content {
+                            width: 300px;
+                            right: -50px;
+
+                            &:before {
+                                right: 80px;
+                            }
+                        }
+                    }
+                }
+            }
 
         }
     }
