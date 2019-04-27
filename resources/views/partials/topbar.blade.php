@@ -9,7 +9,10 @@
 
         <div class="navarea__actions">
             <a href="#" class="nav_action">Notifications</a>
-            <a href="#" class="nav_user">Users</a>
+            <user-menu>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </user-menu>
         </div>
     </nav>
 </header>

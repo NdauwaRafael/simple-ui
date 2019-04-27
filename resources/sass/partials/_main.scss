@@ -1,6 +1,7 @@
 //imports
 @import "./sidebar/sidebar";
 @import "./topbar/topbar";
+@import "imports";
 
 html,
 body {
@@ -13,6 +14,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 
 .page_wrapper {
     height: 100%;

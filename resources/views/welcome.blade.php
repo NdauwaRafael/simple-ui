@@ -13,9 +13,11 @@
 
     </head>
     <body>
-        <div class="page_wrapper">
+        <div class="page_wrapper" id="app">
             @include('partials.topbar')
             @include('partials.sidebar')
         </div>
     </body>
+
+    <script src="/js/app.js"></script>
 </html>
