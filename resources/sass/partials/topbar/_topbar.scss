@@ -1,0 +1,98 @@
+.topbar {
+    min-height: 55px;
+    max-height: 55px;
+
+    z-index: 1030;
+    background: #009688;
+    padding: 0 20px 0 0;
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__logo {
+        -webkit-transition: width 0.3s ease-in-out;
+        -o-transition: width 0.3s ease-in-out;
+        transition: width 0.3s ease-in-out;
+        display: block;
+        float: left;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        width: 230px;
+        padding: 0 15px;
+        font-weight: 300;
+        overflow: hidden;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+            opacity: .7;
+        }
+    }
+
+    .navarea {
+        -webkit-transition: margin-left 0.3s ease-in-out;
+        -o-transition: margin-left 0.3s ease-in-out;
+        transition: margin-left 0.3s ease-in-out;
+        margin-bottom: 0;
+        margin-left: 230px;
+        border: none;
+        min-height: 50px;
+        border-radius: 0;
+        flex: 1;
+        //width: calc(100% - 230px);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__actions {
+            display: flex;
+            align-items: center;
+            padding-right: 30px;
+            flex: 1;
+            min-width: 25%;
+            justify-content: flex-end;
+
+            .nav_action {
+                padding: 0 10px;
+                color: #ffffff;
+                i {
+                    color: #ffffff;
+                    font-size: 28px;
+                    position: relative;
+
+
+                    .notification_badge {
+                        position: absolute;
+                        //top:-10px;
+                        //right: -8px;
+                        left: 18px;
+                        bottom: 14px;
+                        padding: 2px 3.5px;
+                        background-color: #fa3e3e;
+                        border-radius: 2px;
+                        color: #ffffff;
+                        //box-shadow: 0 1px 2px rgba(0,0,0,.5), 0 1px 4px rgba(0,0,0,.4), 0 0 1px rgba(0,0,0,.7) inset, 0 10px 0px rgba(255,255,255,.11) inset;
+                        -webkit-background-clip: padding-box;
+                        font: 12px "monospace", sans-serif;
+                        text-decoration: none;
+                        //text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+                    }
+                }
+
+            }
+
+            .nav_user{
+                padding: 0 10px;
+                color: #ffffff;
+            }
+
+
+        }
+    }
+}

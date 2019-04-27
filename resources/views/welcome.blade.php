@@ -9,7 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <link href="/css/app.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="/css/app.css">
 
     </head>
     <body>
