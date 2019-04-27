@@ -22,7 +22,13 @@
         methods: {
             showNotifications() {
                 this.notifications_display = !this.notifications_display
-            }
+            },
+            view: function (notification) {
+
+                this.notifications_display = false;
+
+                window.location.href = notification.url;
+            },
         }
     }
 </script>

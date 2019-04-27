@@ -1785,6 +1785,10 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     showNotifications: function showNotifications() {
       this.notifications_display = !this.notifications_display;
+    },
+    view: function view(notification) {
+      this.notifications_display = false;
+      window.location.href = notification.url;
     }
   }
 });
