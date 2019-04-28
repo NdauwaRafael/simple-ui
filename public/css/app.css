@@ -10683,6 +10683,52 @@ a.text-dark:focus {
   flex-direction: column;
 }
 
+.sidebar[aria-hidden=true] {
+  width: 50px;
+}
+
+.sidebar[aria-hidden=true] .sidebar__navigation .title {
+  display: none;
+}
+
+.sidebar[aria-hidden=true] .sidebar__navigation ul {
+  list-style: none;
+  margin-left: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.sidebar[aria-hidden=true] .sidebar__navigation ul li a {
+  padding-left: 10px;
+}
+
+.sidebar[aria-hidden=true] .sidebar__navigation ul li a span {
+  display: none;
+}
+
+.sidebar[aria-hidden=true] .sidebar__navigation ul li a:hover {
+  padding-left: 6px;
+}
+
+.sidebar[aria-hidden=true] .sidebar__navigation ul li.has_dropdown a.menu_dropdown {
+  display: block;
+}
+
+.sidebar[aria-hidden=true] .sidebar__navigation ul li.has_dropdown .dropdown_menu_content a {
+  padding-left: 10px;
+}
+
+.sidebar[aria-hidden=true] .sidebar__navigation ul li.has_dropdown .dropdown_menu_content a:hover {
+  padding-left: 6px;
+}
+
+.sidebar[aria-hidden=true] .sidebar__menu_toggle .toggle_button i {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
 .sidebar__navigation {
   flex: 1;
   margin-top: 20px;
@@ -10835,6 +10881,50 @@ a.text-dark:focus {
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   max-width: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .navigation_toggled .sidebar {
+    width: 230px;
+    overflow: auto;
+  }
+
+  .navigation_toggled .sidebar[aria-hidden=true] .sidebar__navigation .title {
+    text-transform: uppercase;
+    color: #9b9b9b;
+    font-size: 11px;
+    font-weight: 300;
+    padding-left: 30px;
+    margin: 10px 0;
+    display: block;
+  }
+
+  .navigation_toggled .sidebar[aria-hidden=true] .sidebar__navigation ul {
+    list-style: none;
+    margin-left: 0;
+  }
+
+  .navigation_toggled .sidebar[aria-hidden=true] .sidebar__navigation ul li a {
+    padding: 11px 10px 11px 15px;
+  }
+
+  .navigation_toggled .sidebar[aria-hidden=true] .sidebar__navigation ul li a span {
+    display: block;
+  }
+
+  .navigation_toggled .sidebar[aria-hidden=true] .sidebar__navigation ul li a:hover {
+    padding-left: 11px;
+  }
+
+  .navigation_toggled .sidebar[aria-hidden=true] .sidebar__navigation ul li.has_dropdown a.menu_dropdown {
+    display: flex;
+  }
 }
 
 .topbar {

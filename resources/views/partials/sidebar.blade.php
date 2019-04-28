@@ -1,4 +1,4 @@
-<aside class="sidebar">
+<aside class="sidebar" id="side_bar" aria-hidden="false">
     <nav class="sidebar__navigation">
         <ul>
             <li>

@@ -20,4 +20,5 @@
     </body>
 
     <script src="/js/app.js"></script>
+    <script src="/js/simple.js"></script>
 </html>
