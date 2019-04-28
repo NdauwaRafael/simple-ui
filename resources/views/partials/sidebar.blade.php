@@ -3,8 +3,22 @@
         <ul>
             <li>
                 <a href="">
-                    <i class="material-icons">add_alert</i>
+                    <i class="material-icons">dashboard</i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="material-icons">menu</i>
                     <span>Menu Item</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="material-icons">menu</i>
+                    <span>Menu Item 1</span>
                 </a>
             </li>
 
