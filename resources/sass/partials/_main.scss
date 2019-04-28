@@ -13,11 +13,11 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     overflow-y: auto;
+    min-height: 100%;
 }
 
 
 .page_wrapper {
-    height: 100%;
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
@@ -26,6 +26,66 @@ body {
         content: " ";
         display: table;
     }
+    height: auto;
+    min-height: 100%;
 }
 
+.page_container {
+    min-height: 90vh;
+    background-color: #ecf0f5;
+    z-index: 800;
+    //width: calc(100% - 230px);
+    margin-left: 230px;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+    padding: 20px;
+
+    &__wrapper {
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    @at-root {
+        .navigation_toggled {
+            .page_container {
+                //width: calc(100% - 50px);
+                margin-left: 50px;
+
+                -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+                -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+                -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+                transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+            }
+        }
+
+        @media screen and (max-width: 1024px){
+            .navigation_toggled {
+                .page_container {
+                    width: 100%;
+                    margin-left: 0;
+
+                    -webkit-animation-name: none;
+                    -webkit-animation-duration: 0s;
+                    animation-name: none;
+                    animation-duration: 0s;
+
+                }
+            }
+
+            .page_container {
+                width: 100%;
+                margin-left: 0;
+
+                -webkit-animation-name: none;
+                -webkit-animation-duration: 0s;
+                animation-name: none;
+                animation-duration: 0s;
+
+            }
+
+        }
+    }
+}
 

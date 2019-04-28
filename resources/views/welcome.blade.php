@@ -16,6 +16,11 @@
         <div class="page_wrapper" id="app">
             @include('partials.topbar')
             @include('partials.sidebar')
+
+            <div class="page_container">
+{{--                @yield('content')--}}
+                <h3>Page Data</h3>
+            </div>
         </div>
     </body>
 

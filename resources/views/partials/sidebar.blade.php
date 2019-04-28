@@ -1,24 +1,41 @@
 <aside class="sidebar" id="side_bar" aria-hidden="false">
     <nav class="sidebar__navigation">
+        <div class="title">
+            Main Menu
+        </div>
         <ul>
             <li>
-                <a href="">
+                <a href="" >
                     <i class="material-icons">dashboard</i>
                     <span>Dashboard</span>
                 </a>
             </li>
 
             <li>
-                <a href="">
-                    <i class="material-icons">menu</i>
-                    <span>Menu Item</span>
+                <a href="" class="active">
+                    <i class="material-icons">account_balance</i>
+                    <span>My Money</span>
                 </a>
             </li>
 
             <li>
                 <a href="">
-                    <i class="material-icons">menu</i>
-                    <span>Menu Item 1</span>
+                    <i class="material-icons">cloud</i>
+                    <span>Cloud</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="material-icons">camera</i>
+                    <span>Photos</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="material-icons">android</i>
+                    <span>Android Devices</span>
                 </a>
             </li>
 
