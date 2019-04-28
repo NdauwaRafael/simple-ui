@@ -10773,19 +10773,19 @@ a.text-dark:focus {
 
 .sidebar__navigation ul li a:hover {
   background-color: rgba(0, 0, 0, 0.09);
-  border-left: 4px solid #417505;
+  border-left: 4px solid #00a65a;
   padding-left: 11px;
 }
 
 .sidebar__navigation ul li a:focus {
   background-color: rgba(0, 0, 0, 0.09);
-  border-left: 4px solid #417505;
+  border-left: 4px solid #00a65a;
   padding-left: 11px;
 }
 
 .sidebar__navigation ul li a.active {
   background-color: rgba(0, 0, 0, 0.09);
-  border-left: 4px solid #417505;
+  border-left: 4px solid #00a65a;
   padding-left: 11px;
 }
 
@@ -10844,7 +10844,7 @@ a.text-dark:focus {
 
 .sidebar__navigation ul li.has_dropdown.active a.menu_dropdown {
   background-color: rgba(0, 0, 0, 0.09);
-  border-left: 4px solid #417505;
+  border-left: 4px solid #00a65a;
   padding-left: 11px;
 }
 
