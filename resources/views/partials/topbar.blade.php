@@ -4,7 +4,10 @@
     </a>
     <nav class="navarea">
         <div class="navarea__menu">
-
+            <a data-target="#side_bar" aria-expanded="false" aria-controls="navigation_toggled"
+               class="toggle_menu toggle-btn">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
 
         <div class="navarea__actions">

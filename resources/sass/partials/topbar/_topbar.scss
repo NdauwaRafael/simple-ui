@@ -3,7 +3,7 @@
     max-height: 55px;
 
     z-index: 1030;
-    background: #009688;
+    background: #00a65a;
     padding: 0 20px 0 0;
     position: relative;
 
@@ -12,9 +12,9 @@
     align-items: center;
 
     &__logo {
-        -webkit-transition: width 0.3s ease-in-out;
-        -o-transition: width 0.3s ease-in-out;
-        transition: width 0.3s ease-in-out;
+        -webkit-transition: transform .3s ease-in-out,width .3s ease-in-out;
+        -moz-transition: transform .3s ease-in-out,width .3s ease-in-out;
+        transition: transform .3s ease-in-out,width .3s ease-in-out;
         display: block;
         float: left;
         height: 50px;
@@ -35,11 +35,11 @@
     }
 
     .navarea {
-        -webkit-transition: margin-left 0.3s ease-in-out;
-        -o-transition: margin-left 0.3s ease-in-out;
-        transition: margin-left 0.3s ease-in-out;
+        -webkit-transition: transform .3s ease-in-out,width .3s ease-in-out;
+        -moz-transition: transform .3s ease-in-out,width .3s ease-in-out;
+        transition: transform .3s ease-in-out,width .3s ease-in-out;
+
         margin-bottom: 0;
-        margin-left: 230px;
         border: none;
         min-height: 50px;
         border-radius: 0;
@@ -49,6 +49,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .toggle_menu {
+            width: 35px;
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            i {
+                color: #fff;
+                font-size: 30px;
+            }
+        }
 
         &__actions {
             display: flex;
