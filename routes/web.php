@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/photos', function () {
+    return view('pages.photos.index');
+});

@@ -26,7 +26,7 @@
             </li>
 
             <li>
-                <a href="">
+                <a href="/photos">
                     <i class="material-icons">camera</i>
                     <span>Photos</span>
                 </a>

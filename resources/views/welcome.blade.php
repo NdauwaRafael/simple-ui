@@ -18,7 +18,7 @@
             @include('partials.sidebar')
 
             <div class="page_container">
-{{--                @yield('content')--}}
+                @yield('content')
                 <h3>Page Data</h3>
             </div>
         </div>
