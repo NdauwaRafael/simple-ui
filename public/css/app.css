@@ -11322,6 +11322,45 @@ a.text-dark:focus {
   margin-left: -15px;
 }
 
+@media screen and (max-width: 1024px) {
+  .topbar__logo {
+    width: 0px;
+    padding-left: 10px;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .topbar__logo .logo_item {
+    display: none;
+  }
+
+  .topbar .navarea {
+    width: calc(100%);
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topbar .navarea__actions .nav_notifications__content {
+    width: 320px;
+    right: -118px;
+  }
+
+  .topbar .navarea__actions .nav_notifications__content:before {
+    right: 134px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .topbar .navarea__actions .nav_user .user_content {
+    right: -32px;
+  }
+
+  .topbar .navarea__actions .nav_user .user_content:after {
+    right: 54px;
+  }
+}
+
 .avatar_toggled {
   min-height: 100vh;
   min-width: 100vw;
