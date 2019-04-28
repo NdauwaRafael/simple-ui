@@ -1,6 +1,8 @@
 <header class="topbar">
-    <a href="/" class="topbar__logo">
-        Awesome App
+    <a class="topbar__logo">
+       <span class="logo_item">
+            Awesome App
+       </span>
     </a>
     <nav class="navarea">
         <div class="navarea__menu">

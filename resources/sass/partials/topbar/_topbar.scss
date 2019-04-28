@@ -32,6 +32,11 @@
             text-decoration: none;
             opacity: .7;
         }
+
+        .logo_item {
+            display: block;
+            color: #fff;
+        }
     }
 
     .navarea {
@@ -396,6 +401,28 @@
                 }
             }
 
+        }
+    }
+
+
+
+    @at-root  {
+        .navigation_toggled {
+            .topbar {
+                &__logo {
+                    width: 0px;
+                    padding-left: 10px;
+                    overflow: hidden;
+                    opacity: 0;
+                    .logo_item {
+                        display: none;
+                    }
+                }
+                .navarea {
+                    width: calc(100%);
+                    margin-left: -15px;
+                }
+            }
         }
     }
 }

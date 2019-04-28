@@ -10962,6 +10962,11 @@ a.text-dark:focus {
   opacity: 0.7;
 }
 
+.topbar__logo .logo_item {
+  display: block;
+  color: #fff;
+}
+
 .topbar .navarea {
   transition: width 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
@@ -11299,6 +11304,22 @@ a.text-dark:focus {
   .crims_notifications__content:before {
     right: 80px;
   }
+}
+
+.navigation_toggled .topbar__logo {
+  width: 0px;
+  padding-left: 10px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.navigation_toggled .topbar__logo .logo_item {
+  display: none;
+}
+
+.navigation_toggled .topbar .navarea {
+  width: calc(100%);
+  margin-left: -15px;
 }
 
 .avatar_toggled {
